@@ -139,6 +139,23 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
+			case 'selever':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/Selever', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Selever Idle', 24);
+				animation.addByPrefix('singUP', 'Selever Up', 24);
+				animation.addByPrefix('singRIGHT', 'Selever Right', 24);
+				animation.addByPrefix('singDOWN', 'Selever Down', 24);
+				animation.addByPrefix('singLEFT', 'Selever Left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 0, 0);
+				addOffset("singRIGHT", 0, 0);
+				addOffset("singLEFT", 0, 0);
+				addOffset("singDOWN", 0, 0);
+
+				playAnim('idle');
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('characters/spooky_kids_assets');
 				frames = tex;
